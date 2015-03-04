@@ -9,13 +9,27 @@ Tags: awesome
 
 /* Typography */
 
-h1,h2,h3,h4,h5,h6 {}
+@font-face {
+    font-family: 'Bauhaus';
+    src: url('fonts/Bauhaus.eot');
+    src: url('fonts/Bauhaus.eot') format('embedded-opentype'),
+         url('fonts/Bauhaus.woff2') format('woff2'),
+         url('fonts/Bauhaus.woff') format('woff'),
+         url('fonts/Bauhaus.ttf') format('truetype'),
+         url('fonts/Bauhaus.svg#Bauhaus') format('svg');
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: 'Bauhaus'; font-weight: normal;}
+body {font-family: 'Raleway', sans-serif; color:#393939;}
 p,label,blockquote,input,select,textarea,li,i {font-size: 23px;}
 
-h1 {}
-h2 {font-size: 53px;}
-h3 {}
-h4 {}
+blockquote {color:#60698e;}
+cite {font-style: normal;}
+
+h1 {font-size: 62px; margin:10px 0px;}
+h2 {font-size: 53px; margin:10px 0px;}
+h3 {font-size: 39px; margin:10px 0px;}
+h4 {font-size: 30px; margin:10px 0px;}
 h5 {}
 h6 {}
 
@@ -29,32 +43,65 @@ input[type=text], input[type=password], input[type=number], input[type=email] {}
 /* Systemic */
 main {margin-top: 95px;}
 .container {max-width: 1180px; margin-left: auto; margin-right: auto;}
+.mini-container {max-width: 780px; margin-left: auto; margin-right: auto;}
 .white-wrap {background-color: #fff;}
 
 /* Header */
 
 header {padding:5px 0px; background-color: #fff; position: fixed; top:0px; left:0px; width: 100%; z-index: 9999;}
-header nav {padding: 20px 0px;}
+header nav {padding: 20px 0px; font-family: 'Bauhaus';}
 header nav ul {margin:0px; padding:0px; display: inline-block;}
-header nav ul li {display: inline-block; vertical-align: top; text-transform: lowercase; padding:10px 25px; font-size: 18px;}
+header nav ul li {display: inline-block; vertical-align: top; text-transform: lowercase; padding:10px 25px; font-size: 18px; background: url('images/bullet.png') no-repeat; background-position:left center; background-size: 16px;}
 header nav .btn {vertical-align: top;}
-
 
 /* Footer */
 
 
 /* Homepage */
 
-.jumbotron {position: relative;}
-.jumbotron img {width: 100%;}
-.jumbotron .overlay {position: absolute; width: 100%; height: 100%; text-align: center; top:0px; color: #fff;}
+.jumbotron {position: relative; max-height: 760px; overflow: hidden;}
+.jumbotron img {width: 100%; margin-top: -180px;}
+.jumbotron .overlay {position: absolute; width: 100%; height: 100%; background-color: rgba(255,255,255,0.40); text-align: center; top:0px; color: #393939; padding-top:8%;}
 .jumbotron .overlay h1 {font-size: 110px;}
-.jumbotron .overlay p {font-size: 38px;}
+.jumbotron .overlay p {font-size: 38px; margin-top:0px;}
 .jumbotron .overlay i {font-size: 156px;}
 
-.product {color: #60698e;}
+.product {color: #60698e; padding:75px 0px;}
+.product img {padding-top:25px;}
 
-.usage {padding:50px 0px; color: #60698e;}
+.usage {padding:25px 0px; color: #60698e;}
 .usage i {font-size: 172px;}
-.usage .number {font-size: 53px; border-radius: 100%; border:4px solid #60698e; display: inline-block; text-align: center; line-height:78px; clear: both; width: 85px; height:85px;}
-.usage p {font-size: 30px;}
+.usage .number {font-size: 53px; border-radius: 100%; border:4px solid #60698e; display: inline-block; text-align: center; line-height:68px; clear: both; width: 85px; height:85px;}
+.usage p {font-size: 30px; margin:10px 0px;}
+
+.before-after {position: relative; width: 100%; height: 740px !important;}
+.before-after img {width: 100%;}
+
+.convservation {padding:75px 0px;}
+.convservation i {font-size:116px; color: #60698e; padding-top: 25px;}
+.convservation h4 {color:#60698e;}
+
+.features {padding:75px 0px;}
+.features ul {text-align: left;}
+.features ul li {background: url('images/bullet.png') no-repeat; background-position:left center; list-style:none; padding-left:65px; padding-top: 15px; padding-bottom: 15px; font-weight: bold;}
+
+.waste {background-image: url('images/waste.jpg'); background-size: cover; background-repeat: no-repeat; padding-top:115px; padding-bottom:115px; color: #fff;}
+.waste h4 {font-family: 'Raleway', sans-serif; font-size: 48px; font-weight: bold;}
+.waste p {padding-left:45px; font-weight: bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

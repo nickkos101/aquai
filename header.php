@@ -2,6 +2,7 @@
 <html>
 <head>
     <title><?php wp_title( '' ); ?></title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,100,300,700' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width">
     <?php wp_head(); ?>
 </head>
@@ -14,8 +15,8 @@
     		<div class="column two-thirds talignright">
     			<nav>
     				<ul>
-    					<li><a href="">How it Works</a></li>
-    					<li><a href="">What does it solve?</a></li>
+    					<li><a href="#howitworks">How it Works</a></li>
+    					<li><a href="#solution">What does it solve?</a></li>
     					<li><a href="">What people say</a></li>
     				</ul>
     				<div class="btn"><i class="fa fa-shopping-cart"></i> Order Now</div>
