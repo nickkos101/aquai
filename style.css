@@ -1,0 +1,60 @@
+/*
+Theme Name: Aquai
+Theme URI: http://inspyregroup.com
+Description: A Modular Theme.
+Author: Nicholas Koskowski, Inspyre Group
+Version: 1.0
+Tags: awesome
+*/
+
+/* Typography */
+
+h1,h2,h3,h4,h5,h6 {}
+p,label,blockquote,input,select,textarea,li,i {font-size: 23px;}
+
+h1 {}
+h2 {font-size: 53px;}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+a {color: inherit; text-decoration: none;}
+
+/* Form Elements */
+
+button,.btn,input[type=submit] {background-color: transparent; border:2px solid #60698e; color:#60698e; border-radius: 8px; font-size: 18px; text-transform: lowercase; padding:10px 15px; display: inline-block;}
+input[type=text], input[type=password], input[type=number], input[type=email] {}
+
+/* Systemic */
+main {margin-top: 95px;}
+.container {max-width: 1180px; margin-left: auto; margin-right: auto;}
+.white-wrap {background-color: #fff;}
+
+/* Header */
+
+header {padding:5px 0px; background-color: #fff; position: fixed; top:0px; left:0px; width: 100%; z-index: 9999;}
+header nav {padding: 20px 0px;}
+header nav ul {margin:0px; padding:0px; display: inline-block;}
+header nav ul li {display: inline-block; vertical-align: top; text-transform: lowercase; padding:10px 25px; font-size: 18px;}
+header nav .btn {vertical-align: top;}
+
+
+/* Footer */
+
+
+/* Homepage */
+
+.jumbotron {position: relative;}
+.jumbotron img {width: 100%;}
+.jumbotron .overlay {position: absolute; width: 100%; height: 100%; text-align: center; top:0px; color: #fff;}
+.jumbotron .overlay h1 {font-size: 110px;}
+.jumbotron .overlay p {font-size: 38px;}
+.jumbotron .overlay i {font-size: 156px;}
+
+.product {color: #60698e;}
+
+.usage {padding:50px 0px; color: #60698e;}
+.usage i {font-size: 172px;}
+.usage .number {font-size: 53px; border-radius: 100%; border:4px solid #60698e; display: inline-block; text-align: center; line-height:78px; clear: both; width: 85px; height:85px;}
+.usage p {font-size: 30px;}
